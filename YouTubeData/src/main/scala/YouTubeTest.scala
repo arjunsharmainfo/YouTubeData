@@ -24,8 +24,7 @@ object YouTubeTest {
 
     for (country <- countries) {
 
-      //val key = "AIzaSyC8MU-69s-iAnrDEQVMDnZU8YpwH1YLRao"
-      val key ="AIzaSyDhYg8BlbPwcVrBS_kS-y4FZdyMiii-SPY"
+      val key ="<YOUTUBE API KEY>"
       val service = new YouTube.Builder(transport, factory, httpRequestInit).setApplicationName("YouTubeData").setYouTubeRequestInitializer(new YouTubeRequestInitializer(key)).build()
 
       // Define and execute the API request
